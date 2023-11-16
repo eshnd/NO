@@ -1,0 +1,13 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1700158983
+amoogus.jpg::CompressedTexture2D::7906801507919341378::1700157853::1700157857::1::::<><>::
+bad.jpg::CompressedTexture2D::6464385686992957112::1700158716::1700158723::1::::<><>::
+icon.svg::CompressedTexture2D::2810375731681887034::1700091268::1700091272::1::::<><>::
+music.mp3::AudioStreamMP3::3421076425029141196::1700157118::1700157162::1::::<><>::
+node_2d.tscn::PackedScene::4223987025318705087::1700158948::0::1::::<><>::res://button.gd
+button.gd::GDScript::-1::1700093600::0::1::::<>Button<>::
+amoogus.tscn::PackedScene::5501621973515275966::1700158948::0::1::::<><>::res://amorgus.gd<>uid://bo0gvnacv0tmq::::res://music.mp3<>uid://dcgi2qoemc67l::::res://sfx.mp3<>uid://dkwd4oxaitouk::::res://amoogus.jpg<>uid://cydnqt5y8080k::::res://bad.jpg
+nobutton.gd::GDScript::-1::1700092705::0::1::::<>Node2D<>::
+amorgus.gd::GDScript::-1::1700158864::0::1::::<>RichTextLabel<>::
+Screenshot 2023-11-16 at 12.22.37 PM.png::CompressedTexture2D::4594306529242568241::1700158961::1700158988::1::::<><>::
+sfx.mp3::AudioStreamMP3::7312560819456047895::1700157155::1700157162::1::::<><>::
