@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://ckna57c3o3j71"]
+[gd_scene load_steps=8 format=3 uid="uid://ckna57c3o3j71"]
 
 [ext_resource type="Script" path="res://amorgus.gd" id="1_ck0om"]
 [ext_resource type="AudioStream" uid="uid://bo0gvnacv0tmq" path="res://music.mp3" id="2_pvu24"]
 [ext_resource type="AudioStream" uid="uid://dcgi2qoemc67l" path="res://sfx.mp3" id="3_g16vb"]
+[ext_resource type="AudioStream" uid="uid://d1q4f0y3167be" path="res://fitness3.mp3" id="4_4etw1"]
 [ext_resource type="Texture2D" uid="uid://dkwd4oxaitouk" path="res://amoogus.jpg" id="4_f40j1"]
 [ext_resource type="Texture2D" uid="uid://cydnqt5y8080k" path="res://bad.jpg" id="5_f1ktv"]
 
@@ -56,6 +57,9 @@ stream = ExtResource("2_pvu24")
 
 [node name="sfx" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_g16vb")
+
+[node name="fitness" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_4etw1")
 
 [node name="Amoogus" type="Sprite2D" parent="."]
 z_index = -10
