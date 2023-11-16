@@ -5,6 +5,7 @@ var sfxb:bool = false
 var musb:bool = false
 
 func _process(delta):
+	scroll_to_line(get_line_count()-1)
 	if sfxb == true:
 		$"../Amoogus".scale = Vector2($"../Amoogus".scale.x+.01,$"../Amoogus".scale.y+.01)
 	if $"../Amoogus".scale.x > 1:
