@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://ckna57c3o3j71"]
+[gd_scene load_steps=9 format=3 uid="uid://ckna57c3o3j71"]
 
 [ext_resource type="Script" path="res://amorgus.gd" id="1_ck0om"]
 [ext_resource type="AudioStream" uid="uid://bo0gvnacv0tmq" path="res://music.mp3" id="2_pvu24"]
 [ext_resource type="AudioStream" uid="uid://dcgi2qoemc67l" path="res://sfx.mp3" id="3_g16vb"]
 [ext_resource type="AudioStream" uid="uid://d1q4f0y3167be" path="res://fitness3.mp3" id="4_4etw1"]
 [ext_resource type="Texture2D" uid="uid://dkwd4oxaitouk" path="res://amoogus.jpg" id="4_f40j1"]
+[ext_resource type="AudioStream" uid="uid://bwuusp8m2qg7d" path="res://shimmy.mp3" id="4_flu3m"]
 [ext_resource type="Texture2D" uid="uid://cydnqt5y8080k" path="res://bad.jpg" id="5_f1ktv"]
 
 [sub_resource type="Theme" id="Theme_3ej05"]
@@ -44,22 +45,20 @@ offset_bottom = 163.0
 theme = SubResource("Theme_3ej05")
 text = "no essay generator"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-z_index = -5
-offset_left = 11.0
-offset_top = -1.0
-offset_right = 559.0
-offset_bottom = 1294.0
-script = ExtResource("1_ck0om")
-
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_pvu24")
+volume_db = 7.027
 
 [node name="sfx" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_g16vb")
 
 [node name="fitness" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_4etw1")
+volume_db = 13.585
+
+[node name="shimmy" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_flu3m")
+volume_db = 7.965
 
 [node name="Amoogus" type="Sprite2D" parent="."]
 z_index = -10
@@ -71,6 +70,14 @@ z_index = -12
 position = Vector2(400, 609)
 scale = Vector2(0.552344, 0.961111)
 texture = ExtResource("5_f1ktv")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = -5
+offset_left = 11.0
+offset_top = -1.0
+offset_right = 559.0
+offset_bottom = 1294.0
+script = ExtResource("1_ck0om")
 
 [connection signal="pressed" from="Button4" to="RichTextLabel" method="_on_button_4_pressed"]
 [connection signal="pressed" from="Button3" to="RichTextLabel" method="_on_button_3_pressed"]
